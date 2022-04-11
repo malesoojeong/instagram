@@ -1,17 +1,20 @@
 <style>
-    div{
-        width:150px;
-        height:150px;
-    }
     img{
-        width:100%;
-        height:100%;
-        object-fit: cover;
-    
-        border:solid white 1px;
-        border-radius: 50%;
+        height:200px;
     }
-</style>
-<div>
-    <img src="image/hl 1.jpg"/>
-</div>
+    @media (max-width:600px){
+        p {background-color: pink;}
+        .desktop {display:none;}
+        .mobile {display:block;}     
+    }
+    @media (min-width:600px){
+        p {background-color: skyblue}
+        .desktop {display:block;}
+        .mobile {display:none;}
+    }
+    </style>
+    <img class="desktop" src="image/profile.jpg"/>
+    <p>
+        화면에 어떻게 표시되나요?
+    </p>
+    <img class="mobile" src="image/profile.jpg"/>
